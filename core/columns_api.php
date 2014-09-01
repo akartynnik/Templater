@@ -378,7 +378,7 @@ function columns_remove_invalid( $p_columns, $p_columns_all ) {
  * @access public
  */
 function print_column_title_selection( $p_sort, $p_dir, $p_columns_target = COLUMNS_TARGET_VIEW_PAGE ) {
-	echo '<td> &#160; </td>';
+	echo '<td class="column-selection"> &#160; </td>';
 }
 
 /**
@@ -390,7 +390,7 @@ function print_column_title_selection( $p_sort, $p_dir, $p_columns_target = COLU
  * @access public
  */
 function print_column_title_edit( $p_sort, $p_dir, $p_columns_target = COLUMNS_TARGET_VIEW_PAGE ) {
-	echo '<td> &#160; </td>';
+	echo '<td class="column-edit"> &#160; </td>';
 }
 
 /**
@@ -402,7 +402,7 @@ function print_column_title_edit( $p_sort, $p_dir, $p_columns_target = COLUMNS_T
  * @access public
  */
 function print_column_title_id( $p_sort, $p_dir, $p_columns_target = COLUMNS_TARGET_VIEW_PAGE ) {
-	echo '<td>';
+	echo '<td class="column-id">';
 	print_view_bug_sort_link( lang_get( 'id' ), 'id', $p_sort, $p_dir, $p_columns_target );
 	print_sort_icon( $p_dir, $p_sort, 'id' );
 	echo '</td>';
@@ -462,7 +462,7 @@ function print_column_title_handler_id( $p_sort, $p_dir, $p_columns_target = COL
  * @access public
  */
 function print_column_title_priority( $p_sort, $p_dir, $p_columns_target = COLUMNS_TARGET_VIEW_PAGE ) {
-	echo '<td>';
+	echo '<td class="column-priority">';
 	print_view_bug_sort_link( lang_get( 'priority_abbreviation' ), 'priority', $p_sort, $p_dir, $p_columns_target );
 	print_sort_icon( $p_dir, $p_sort, 'priority' );
 	echo '</td>';
