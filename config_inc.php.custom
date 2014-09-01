@@ -37,7 +37,6 @@
 					'reporter',
 					'handler',
 					'priority',
-					'severity',
 					'status',
 					'projection',
 					'eta',
