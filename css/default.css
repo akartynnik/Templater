@@ -268,3 +268,5 @@ a:hover { text-decoration: underline;}
 .column-id { width:70px; }
 .column-edit { width: 30px; }
 .column-selection { width: 30px; }
+.not-link { color: #000; }
+.not-link:hover { text-decoration: none;}
