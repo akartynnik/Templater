@@ -264,3 +264,7 @@ a:hover { text-decoration: underline;}
 .sort-icon{padding: 0 0 0 5px;}
 .menu .button-small {margin-top: -4px;}
 .menu a.logout{ font-weight: bold; color: #0B8BDD !important}
+.column-priority { width: 110px; }
+.column-id { width:70px; }
+.column-edit { width: 30px; }
+.column-selection { width: 30px; }
