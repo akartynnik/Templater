@@ -270,3 +270,4 @@ a:hover { text-decoration: underline;}
 .column-selection { width: 30px; }
 .not-link { color: #000; }
 .not-link:hover { text-decoration: none;}
+#report_stay { width: auto !important;}
