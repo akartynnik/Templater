@@ -1244,8 +1244,7 @@ function print_column_summary( $p_bug, $p_columns_target = COLUMNS_TARGET_VIEW_P
 	} else {
 		$t_summary = string_display_line_links( $p_bug->summary );
 	}
-
-	echo '<td class="left">' . $t_summary . '</td>';
+	echo '<td class="left"><a class="not-link-hover-underline" href="view.php?id='. $p_bug->id .'">' . $t_summary . '</a></td>';
 }
 
 /**

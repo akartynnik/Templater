@@ -93,6 +93,8 @@ require_once( 'rss_api.php' );
  */
 require_once( 'php_api.php' );
 
+require_once( 'wiki_api.php' );
+
 $g_rss_feed_url = null;
 
 $g_robots_meta = '';
