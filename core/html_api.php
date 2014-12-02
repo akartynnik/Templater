@@ -610,7 +610,7 @@ function html_footer( $p_file = null ) {
 
 	echo "\t", '<br />', "\n";
 
-	echo '<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>';
+	echo '<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td style="width: 100%">';
 	if( ON == config_get( 'show_version' ) ) {
 		$t_version_suffix = config_get_global( 'version_suffix' );
 		$t_mantis_version = MANTIS_VERSION . ( $t_version_suffix ? " $t_version_suffix" : '' );
@@ -621,7 +621,7 @@ function html_footer( $p_file = null ) {
 			"[$t_mantis_href ", 'target="_blank">^</a>]',
 			"</span>\n";
 	}
-
+	echo "\t<address style=\"text-align: center\">Copyright &copy; 2000 - ", date( 'Y' ), " MantisBT Team <span style=\"margin-left: 15px; font-size: 8pt;\">Design by <a href=\"mailto:alex.kar.008@gmail.com\">alex.kar</a></span></address>\n";
 	# only display webmaster email is current user is not the anonymous user
 	
 
