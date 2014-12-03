@@ -1,4 +1,4 @@
-MantisBT - DarkBlue Template
+MantisBT: DarkBlue Template
 =================
 This repository includes file MantisBT v.1.2.17 with improved design.  
 
