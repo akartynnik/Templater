@@ -2,9 +2,9 @@ MantisBT - Dark-Blue template
 =================
 This repository includes file MantisBT v.1.2.17 with improved design.  
 
-**Note** *config_inc.php.custom* file should be merged with your configuration file! Other files need to be replaced.
+**NOTE:** *config_inc.php.custom* file should be merged with your configuration file! Other files need to be replaced.
 
-**Todo** make plugin with a variety of settings and the ability to switch to the default template
+**TODO:** make plugin with a variety of settings and the ability to switch to the default template
 
 **Links**  
 [Official topic on MantisBT forum](https://www.mantisbt.org/forums/viewtopic.php?f=11&t=22780)  
