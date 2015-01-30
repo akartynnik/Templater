@@ -61,12 +61,10 @@ class TemplaterPlugin extends MantisPlugin {
 		
 		if( ON == plugin_config_get( 'templater_enable' ) )
 		{
-			$path_to_custom_css = config_get( 'absolute_path' ) . "templates/" . $curent_template_folder_name . "/css/style.css";
-			$path_to_custom_js = config_get( 'absolute_path' ) . "templates/" . $curent_template_folder_name . "/js/script.js";
-			$custom_css = file_get_contents($path_to_custom_css);
-			$custom_js = file_get_contents($path_to_custom_js);
-			echo "<style>" . $custom_css . "</style>" . "\r\n";
-			echo "<script>" . $custom_js . "</script>" . "\r\n";
+			$path_to_custom_css = "../templates/" . $curent_template_folder_name . "/css/style.css";
+			$path_to_custom_js = "../templates/" . $curent_template_folder_name . "/js/script.js";
+			echo "<style src=\"" . $path_to_custom_css . "\"></style>" . "\r\n";
+			echo "<script src=\"" . $path_to_custom_js . "\"></script>" . "\r\n";
 		}
 		
 		if( ON == plugin_config_get( 'send_comment_fix' ) )

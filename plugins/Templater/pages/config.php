@@ -44,7 +44,7 @@ function get_template_dir(){
 		<tr <?php echo helper_alternate_class( )?>>
 			<td class="category" width="60%">
 				Поддержка jQuery v1.11.2 <br/>
-				<span class="small">Необходимо для корректной работы некоторых шаблонов и твиков</span>
+				<span class="small">Необходимо для корректной работы некоторых шаблонов и твиков (не включать в версии >= 1.3.0)</span>
 			</td>
 			<td class="center" width="20%">
 				<label><input type="radio" name="enable_jquery" value="1" <?php echo( ON == plugin_config_get( 'enable_jquery' ) ) ? 'checked="checked" ' : ''?>/>
