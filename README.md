@@ -51,6 +51,7 @@ Templater - это плагин, позволяющий применять к Ma
 [Пост на Habrahabr.ru](http://habrahabr.ru/post/235017/)
 
 **Превью**  
+***
 ![MantisBT Templater](http://habrastorage.org/files/abd/cb0/89b/abdcb089b9ca4aadaa63f412f8f7ad17.JPG)
 ***
 ![MantisBT DarkBlue template](http://habrastorage.org/files/56f/059/94b/56f05994bae448378d107f9dc6f87d56.JPG)
@@ -61,5 +62,5 @@ Templater - это плагин, позволяющий применять к Ma
 ***
 ![MantisBT DarkBlue template](http://habrastorage.org/files/02a/d4c/1ae/02ad4c1ae60d4202a7135a42f72a15a7.PNG)
 ***
-![MantisBT DarkRed template](http://habrastorage.org/files/abd/cb0/89b/abdcb089b9ca4aadaa63f412f8f7ad17.JPG)
+![MantisBT DarkRed template](http://habrastorage.org/files/685/4f9/199/6854f9199163442b9ac588c498c38527.JPG)
 
