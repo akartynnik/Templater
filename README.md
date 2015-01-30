@@ -51,6 +51,10 @@ Templater - это плагин, позволяющий применять к Ma
 [Первый пост на Megamozg.ru](http://megamozg.ru/post/2160/)  
 [Второй пост на Habrahabr.ru](http://habrahabr.ru/post/249367/)  
 
+**Контакты (Contact info)**
+* skype: `lex-kar-008` 
+* email: `alex.kar.008[dog]dmail.com`  
+
 **Превью**  
 ***
 ![MantisBT Templater](http://habrastorage.org/files/abd/cb0/89b/abdcb089b9ca4aadaa63f412f8f7ad17.JPG)
