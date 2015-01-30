@@ -9,9 +9,6 @@ class TemplaterPlugin extends MantisPlugin {
 		$this->page = 'config';
 
 		$this->version = '1.0';
-		$this->requires = array(
-			'MantisCore' => '1.2.0',
-		);
 		$this->author = 'Aliaksei Kartynnik';
 		$this->contact = 'alex.kar.008@gmail.com';
 		$this->url = 'https://github.com/akartynnik/mantisbt-template';
