@@ -63,7 +63,7 @@ class TemplaterPlugin extends MantisPlugin {
 		{
 			$path_to_custom_css = "../templates/" . $curent_template_folder_name . "/css/style.css";
 			$path_to_custom_js = "../templates/" . $curent_template_folder_name . "/js/script.js";
-			echo "<style src=\"" . $path_to_custom_css . "\"></style>" . "\r\n";
+			echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . $path_to_custom_css . "\" />" . "\r\n";
 			echo "<script src=\"" . $path_to_custom_js . "\"></script>" . "\r\n";
 		}
 		
