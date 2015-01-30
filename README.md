@@ -14,8 +14,8 @@ Templater - это плагин, позволяющий применять к Ma
 
 ###Инструкция по установке плагина  
 
-1. скопировать папки `plugins/Templater/` и `templates/` в корень MantisBT
-2. в файле "core/html_api.php" в начало функции "html_footer()" (после текста "function html_footer( $p_file = null ) {") вставить строчку "event_signal( 'EVENT_TEMPATER_INIT' );". Этот иветн отвечает за инициализацию плагина на каждой из страниц MantisBT
+1. скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
+2. в файле `core/html_api.php` в начало функции `html_footer()` вставить строчку `event_signal( 'EVENT_TEMPATER_INIT' );` после строки `function html_footer( $p_file = null ) {`. Этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*
 3. в MantisBT в меню "Управление"-"Управление плагинами" включить плагин "Шаблонизатор Templater"  
 
 На корректной работы шаблона DarkBlue необходимо всети несколько правок в конфигурацию MantisBT:
