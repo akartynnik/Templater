@@ -1,4 +1,4 @@
-MantisBT: DarkBlue Template
+Templater - менеджер шаблонов оформления и твикер для MantisBT
 =================
 This repository includes file MantisBT v.1.2.17 with improved design.  
 
