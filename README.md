@@ -16,11 +16,11 @@ Templater - это плагин, позволяющий применять к Ma
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
 2. В файле `core/html_api.php` в начало функции `html_footer()` вставить строчку `event_signal( 'EVENT_TEMPATER_INIT' );` после строки `function html_footer( $p_file = null ) {` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
-3. в *MantisBT* в меню **Управление**-**Управление плагинами** включить плагин **Шаблонизатор Templater**;   
+3. в *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
-На корректной работы шаблона DarkBlue необходимо всети несколько правок в конфигурацию MantisBT:
-1. В MantisBT в меню "Управление"-"Управление конфигурацией"-"Отображаемые столбцы" заменить значение в поле "Просмотр инцидентов" на "selection, priority, id, summary, category_id, status, eta, date_submitted, last_updated, edit";
-2. Внести правки в ваш файл конфигурации config_inc.php в соответствии с файлом config_inc_custom.php;  
+Для корректной работы шаблонов *DarkBlue* и *DarkRed* необходимо всети несколько правок в конфигурацию *MantisBT*:
+1. В MantisBT в меню *"Управление"-"Управление конфигурацией"-"Отображаемые столбцы"* заменить значение в поле *"Просмотр инцидентов"* на `selection, priority, id, summary, category_id, status, eta, date_submitted, last_updated, edit`;
+2. Внести правки в ваш файл конфигурации `config_inc.php` в соответствии с файлом `config_inc_custom.php` из этого репозитория;  
 	
 ###Инструкция по созданию новых шаблонов  
 
