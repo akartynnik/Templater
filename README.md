@@ -8,9 +8,9 @@ Templater - это плагин, позволяющий применять к Ma
 * Возможность убрать квадратные скобки (брекеты) вокруг ссылок;
 * Превращение названия инцидента в ссылку на инцидент на странице просмотра списка инцидентов;
 
-Список шаблонов в текущей версии:  
-* **DarkBlue v1.1** - основной шаблон в темно-голубых тонах;  
-* **DarkRed v1.1** - шаблон в темно-красных тонах, основан на DarkBlue;
+Список шаблонов в текущей версии плагина (адаптированы для MantisBT версий *< 1.3.0*):  
+* **DarkBlue** - основной шаблон в темно-голубых тонах;  
+* **DarkRed** - шаблон в темно-красных тонах, основан на DarkBlue;
 
 Некоторые фишки шаблонов:  
 * Выделение текущего меню;  
@@ -34,7 +34,7 @@ Templater - это плагин, позволяющий применять к Ma
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
 2. В файле `core/html_api.php` в начало функции `html_footer()` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` после строки `function html_footer() {` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
-3. В файле `core/http_api.php` в функции `http_security_headers()` изменить строчку `header( 'Content-Security-Policy: default-src \'self\';' . $t_avatar_img_allow . '; frame-ancestors \'none\'' );` на `header( 'Content-Security-Policy: default-src \'self\'; font-src \'self\' fonts.gstatic.com; style-src \'self\' fonts.googleapis.com \'unsafe-inline\';' . $t_avatar_img_allow . '; frame-ancestors \'none\';' );` (изменения касаются так называемой [Content Security Policy](http://habrahabr.ru/company/yandex/blog/206508/), и позволяют подгружать шрифта с серверов google, а так же устраняют проблему с подгрузкой стилей, используемых библиотекой jQuery);
+3. В файле `core/http_api.php` в функции `http_security_headers()` изменить строчку `header( 'Content-Security-Policy: default-src \'self\';' . $t_avatar_img_allow . '; frame-ancestors \'none\'' );` на `header( 'Content-Security-Policy: default-src \'self\'; font-src \'self\' fonts.gstatic.com; style-src \'self\' fonts.googleapis.com \'unsafe-inline\';' . $t_avatar_img_allow . '; frame-ancestors \'none\';' );` (изменения касаются так называемой [Content Security Policy](http://habrahabr.ru/company/yandex/blog/206508/), и позволяют подгружать шрифты с серверов google, а так же устраняют проблему с подгрузкой стилей, используемых библиотекой jQuery);
 4. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
 ***
