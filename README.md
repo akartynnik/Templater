@@ -32,8 +32,8 @@ Templater - это плагин, позволяющий применять к Ma
 
 Для корректной работы шаблонов *DarkBlue* и *DarkRed* необходимо внести несколько правок в конфигурацию *MantisBT*:  
 
-1. В MantisBT в меню *"Управление"-"Управление конфигурацией"-"Отображаемые столбцы"* заменить значение в поле *"Просмотр инцидентов"* на `selection, priority, id, summary, category_id, status, eta, date_submitted, last_updated, edit`;
-2. Внести правки в ваш файл конфигурации `config_inc.php` в соответствии с файлом `config_inc_custom.php` из этого репозитория;  
+1. Внести правки в ваш файл конфигурации `config_inc.php` в соответствии с файлом `config_inc_custom.php` из этого репозитория; 
+2. В MantisBT в меню *"Управление"-"Управление конфигурацией"-"Отображаемые столбцы"* заменить значение в поле *"Просмотр инцидентов"* на `selection, priority, id, summary, category_id, status, eta, date_submitted, last_updated, edit`;
 	
 ###Инструкция по созданию новых шаблонов  
 
