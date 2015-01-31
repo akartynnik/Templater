@@ -34,7 +34,7 @@ class TemplaterPlugin extends MantisPlugin {
 	 */
 	function events() {
         return array(
-            'EVENT_TEMPATER_INIT' => EVENT_TYPE_EXECUTE,
+            'EVENT_TEMPLATER_INIT' => EVENT_TYPE_EXECUTE,
         );
     }
 	
@@ -43,7 +43,7 @@ class TemplaterPlugin extends MantisPlugin {
 	 */
 	function hooks() {
         return array(
-            'EVENT_TEMPATER_INIT' => 'initialize',
+            'EVENT_TEMPLATER_INIT' => 'initialize',
         );
     }
 	
