@@ -8,7 +8,7 @@ class TemplaterPlugin extends MantisPlugin {
 		$this->description = 'С помощью данного плагина можно использовать пользовательские шаблоны оформления MantisBT, а так же применять некоторые полезные твики.';
 		$this->page = 'config';
 
-		$this->version = '1.0';
+		$this->version = '1.1';
 		$this->author = 'Aliaksei Kartynnik';
 		$this->contact = 'alex.kar.008@gmail.com';
 		$this->url = 'https://github.com/akartynnik/mantisbt-template';
