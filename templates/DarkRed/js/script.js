@@ -36,7 +36,7 @@ $( document ).ready(function() {
 	$("img[src*='down.png']").css("padding","0 0 0 5px");
 	
 	//приоритеты багов
-	$("#buglist tr:not(.row-category) td").each(function(){										
+	$("#buglist tr:not(.row-category) td:not([colspan])").each(function(){										
 		if($.trim($(this).html()) == '&nbsp;')
 		{
 			$(this).html("<img src=\"../../templates/DarkRed/priority_1.png\">");
