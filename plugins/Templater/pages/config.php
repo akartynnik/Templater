@@ -62,7 +62,7 @@ function get_template_dir(){
 			</td>
 			<td class="center" colspan="2">
 				<select name="template_name" style="width: 50%;">
-					<?
+					<?php
 						$selected_item_name = plugin_config_get( 'template_name' );
 						$folders = get_template_dir();
 						foreach($folders as $item)
