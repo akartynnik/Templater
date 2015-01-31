@@ -54,10 +54,14 @@ class TemplaterPlugin extends MantisPlugin {
 		$curent_template_folder_name = plugin_config_get( 'template_name' );
 		$current_plugin_path = config_get( 'plugin_path' );
 		
+		
+		
 		if( ON == plugin_config_get( 'enable_jquery' ) )
 		{
 			echo "<script src=\"../plugins/Templater/custom-features/jquery.min.js\"></script>" . "\r\n";
 		}
+		
+		
 		
 		if( ON == plugin_config_get( 'templater_enable' ) )
 		{
@@ -67,24 +71,53 @@ class TemplaterPlugin extends MantisPlugin {
 			echo "<script src=\"" . $path_to_custom_js . "\"></script>" . "\r\n";
 		}
 		
+		
+		
 		if( ON == plugin_config_get( 'send_comment_fix' ) )
 		{
-			echo "<script src=\"../plugins/Templater/custom-features/send_comment_fix.js\"></script>" . "\r\n";
+			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
+			{
+				echo "<script src=\"../plugins/Templater/custom-features/send_comment_fix_for_v1.3.js\"></script>" . "\r\n";
+			} 
+			else 
+			{
+				echo "<script src=\"../plugins/Templater/custom-features/send_comment_fix.js\"></script>" . "\r\n";
+			}
 		}
+		
+		
 		
 		if( ON == plugin_config_get( 'bottom_logo_fix' ) )
 		{
 			echo "<script src=\"../plugins/Templater/custom-features/bottom_logo_fix.js\"></script>" . "\r\n";
 		}
 		
+		
+		
 		if( ON == plugin_config_get( 'brackets_fix' ) )
 		{
-			echo "<script src=\"../plugins/Templater/custom-features/brackets_fix.js\"></script>" . "\r\n";
+			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
+			{
+				echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../plugins/Templater/custom-features/brackets_fix_for_v1.3.css\"></script>" . "\r\n";
+			} 
+			else 
+			{
+				echo "<script src=\"../plugins/Templater/custom-features/brackets_fix.js\"></script>" . "\r\n";
+			}
 		}
+		
+		
 		
 		if( ON == plugin_config_get( 'name_as_link_fix' ) )
 		{
-			echo "<script src=\"../plugins/Templater/custom-features/name_as_link_fix.js\"></script>" . "\r\n";
+			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
+			{
+				echo "<script src=\"../plugins/Templater/custom-features/name_as_link_fix_for_v1.3.js\"></script>" . "\r\n";
+			} 
+			else 
+			{
+				echo "<script src=\"../plugins/Templater/custom-features/name_as_link_fix.js\"></script>" . "\r\n";
+			}
 		}
         
 	}

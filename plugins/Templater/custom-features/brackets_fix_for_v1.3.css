@@ -1,0 +1,25 @@
+#manage-user-link:before, 
+#manage-menu ul li:before, 
+#manage-config-menu ul li:before, 
+#summary-menu ul li:before, 
+#summary-submenu ul li:before, 
+#account-menu ul li:before, 
+#doc-menu ul li:before, 
+#admin-menu ul li:before, 
+span.permalink:before, 
+span.switch-view:before {
+	content: "" !important;
+}
+
+#manage-user-link:after, 
+#manage-menu ul li:after, 
+#manage-config-menu ul li:after, 
+#summary-menu ul li:after, 
+#summary-submenu ul li:after, 
+#account-menu ul li:after, 
+#doc-menu ul li:after, 
+#admin-menu ul li:after, 
+span.permalink:after, 
+span.switch-view:after {
+	content: "" !important;
+}

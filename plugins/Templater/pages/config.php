@@ -19,11 +19,11 @@ function get_template_dir(){
 
 <br />
 <form action="<?php echo plugin_page( 'config_edit' )?>" method="post">
-<?php echo form_security_field( 'plugin_templater_config_edit' ) ?>
+<?php echo form_security_field( 'plugin_templater_config_edit' ); ?>
 	<table align="center" class="width50" cellspacing="1">
 		<tr>
 			<td class="form-title" colspan="3">
-				Настройки шаблонизатора
+				Настройки шаблонизатора <span class="small">(ваша версия mantisbt: <b> <?php echo MANTIS_VERSION  . config_get_global( 'version_suffix' ); ?> </b>)</span>
 			</td>
 		</tr>
 		
@@ -44,7 +44,7 @@ function get_template_dir(){
 		<tr <?php echo helper_alternate_class( )?>>
 			<td class="category" width="60%">
 				Поддержка jQuery v1.11.2 <br/>
-				<span class="small">Необходимо для корректной работы некоторых шаблонов и твиков (не включать в версии >= 1.3.0)</span>
+				<span class="small">Необходима для корректной работы некоторых шаблонов и твиков (не включать в версии >= 1.3.0)</span>
 			</td>
 			<td class="center" width="20%">
 				<label><input type="radio" name="enable_jquery" value="1" <?php echo( ON == plugin_config_get( 'enable_jquery' ) ) ? 'checked="checked" ' : ''?>/>
@@ -80,7 +80,6 @@ function get_template_dir(){
 			<tr <?php echo helper_alternate_class( )?>>
 				<td class="category" width="60%">
 					Отправка комментариев по нажатию "Ctrl" + "Enter"
-				<span class="small" style="float: right;"> (необходима поддержка jQuery)</span>
 				</td>
 				<td class="center" width="20%">
 					<label><input type="radio" name="send_comment_fix" value="1" <?php echo( ON == plugin_config_get( 'send_comment_fix' ) ) ? 'checked="checked" ' : ''?>/>
@@ -95,7 +94,6 @@ function get_template_dir(){
 			<tr <?php echo helper_alternate_class( )?>>
 				<td class="category" width="60%">
 					Скрыть лого MantisBT в подвале сайта
-					<span class="small" style="float: right;"> (необходима поддержка jQuery)</span>
 				</td>
 				<td class="center" width="20%">
 					<label><input type="radio" name="bottom_logo_fix" value="1" <?php echo( ON == plugin_config_get( 'bottom_logo_fix' ) ) ? 'checked="checked" ' : ''?>/>
@@ -110,7 +108,6 @@ function get_template_dir(){
 			<tr <?php echo helper_alternate_class( )?>>
 				<td class="category" width="60%">
 					Убрать квадратные скобки (брекеты) в ссылках
-					<span class="small" style="float: right;"> (необходима поддержка jQuery)</span>
 				</td>
 				<td class="center" width="20%">
 					<label><input type="radio" name="brackets_fix" value="1" <?php echo( ON == plugin_config_get( 'brackets_fix' ) ) ? 'checked="checked" ' : ''?>/>
@@ -125,7 +122,6 @@ function get_template_dir(){
 			<tr <?php echo helper_alternate_class( )?>>
 				<td class="category" width="60%">
 					Название инцидента как ссылка на странице "Список инцидентов"
-					<span class="small" style="float: right;"> (необходима поддержка jQuery)</span>
 				</td>
 				<td class="center" width="20%">
 					<label><input type="radio" name="name_as_link_fix" value="1" <?php echo( ON == plugin_config_get( 'name_as_link_fix' ) ) ? 'checked="checked" ' : ''?>/>
