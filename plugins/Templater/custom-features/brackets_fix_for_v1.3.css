@@ -23,3 +23,13 @@ span.permalink:after,
 span.switch-view:after {
 	content: "" !important;
 }
+
+#login-links li:before, 
+#captcha-refresh li:before{
+	content: "" !important;
+}
+
+#login-links li:after, 
+#captcha-refresh li:after{
+	content: "" !important;
+}

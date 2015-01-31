@@ -1,0 +1,380 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 87.5%;
+    margin: 6px 4px;
+}
+
+p {
+    font-family: 'Open Sans',sans-serif;
+}
+
+span {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 10pt;
+}
+
+a > img {
+    border: none;
+}
+
+table.width100 {
+    width: 100%;
+    border: none;
+}
+
+table.width90 {
+    width: 90%;
+    border: none;
+}
+
+table.width75 {
+    width: 75%;
+    border: none;
+}
+
+table.width60 {
+    width: 60%;
+    border: none;
+}
+
+table.width50 {
+    width: 50%;
+    border: none;
+}
+
+#filter_open, #filter_closed {
+    border: none;
+}
+
+div.summary-container table{
+	border: none;
+}
+
+.recently-visited {
+    font-size: 9pt;
+}
+
+.main-menu ul li a{
+	border-right: none;
+}
+
+input[type="submit"],
+.button-small {
+    -moz-user-select: none;
+    background-image: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 0 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+input[type="submit"],
+.button-small {
+    background-color: #ebebeb;
+    border: 1px solid #cccccc;
+    color: #222;
+}
+
+input[type="submit"]:hover,
+.button-small:hover {
+    background-color: #cccccc;
+}
+
+.main-menu {
+    background-color: #3D3D3D;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    padding: 7px 0px;
+	border: none;
+	height: 30px;
+	margin-top: -5px !important; 
+	font-size: 10pt;
+}
+
+.info-bar{
+	padding-right: 8px;
+	padding-left: 3px;
+}
+
+.bug-jump input[name="bug_id"] {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #000000;
+    height: 14px;
+    line-height: 1.42857;
+    padding: 3px 12px 5px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+#menu-items{
+	margin-left: 10px;
+}
+
+#bug-jump{
+	margin-right: 10px !important;
+}
+
+#menu-items li a {
+    margin: 0 12px;
+    padding: 0px;
+    display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+#menu-items li a:hover {
+    text-decoration: none !important;
+	border-bottom: 1px solid white;
+}
+
+#menu-items li a:first-letter {
+    text-transform: uppercase;
+}
+
+#menu-items li:last-child a{
+    color: #0b8bdd !important;
+    font-weight: bold;
+}
+
+
+#menu-items .selected-menu{
+	font-weight: bold;
+	border-bottom: 1px dashed white;
+}
+
+#menu-items .selected-menu:hover{
+	text-decoration: none !important;
+	border-bottom: 1px solid white;
+}
+
+#action-group-issues-div, 
+div.section-container, 
+div.form-container, 
+div.table-container{
+	border: none;
+}
+
+.timeline {
+	border: 1px solid #cccccc !important;
+	border-radius: 10px;
+	background-color: #F4F4F4;
+}
+
+#mantis .login-page{
+	max-width: 370px !important;
+	margin-left: auto;
+	margin-right:  auto;
+	margin-top: -30px;
+}
+
+.field-container label .login-page-category{
+	font-weight: normal;
+	display: inline-block;
+}
+
+#action-group-issues-div, div.section-container, div.form-container, div.table-container{
+	min-width: 200px !important;
+}
+
+#secure-session-label{
+	display: inline-block;
+	width: 85%;
+}
+
+#login-page-category{
+	display: inline-block;
+	width: 85%;
+}
+
+span#session-msg{
+	display: inline-block;
+	width: 100%;
+	padding-left: 12px;
+	line-height: 1.4 !important;
+	background-color: transparent;
+}
+#login-links {
+	text-align: right;
+	position: relative  !important;
+}
+
+#login-links a,
+.bracket-link a,
+#manage-menu a,
+#manage-config-menu a {
+	border-bottom: 1px dashed #515050;
+    color: #515050;
+    font-size: 12px;
+	display: inline-block;
+	text-decoration: none !important;
+}
+
+#login-links a:hover,
+.bracket-link a:hover,
+#manage-menu a:hover,
+#manage-config-menu a:hover {
+	border-bottom: 1px solid #515050;
+	text-decoration: none;
+}
+
+#login-links a:first-letter,
+.bracket-link a:first-letter,
+#manage-menu a:first-letter,
+#manage-config-menu a:first-letter {
+    text-transform: uppercase;
+}
+
+#manage-menu a,
+#manage-config-menu a{
+	margin: 0 5px;
+}
+
+.column-selection,
+.column-edit {
+	width: 30px;
+}
+
+.column-priority{
+	width: 110px;
+}
+
+.column-summary{
+	width: 40%;
+}
+
+.column-date-submitted,
+.column-last-modified{
+	width: 90px;
+}
+
+.column-id{
+	width: 50px;
+}
+/** From Old Style **/
+address {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 8pt;
+	text-align: center;
+}
+
+address:not(a) {
+	color: black !important;
+}
+
+
+
+.login-page td{
+	background-color: white;
+	display: block;
+}
+
+.login-page td input[type="checkbox"]{
+	float: right;
+	margin-top: -20px;
+}
+
+
+
+.login-page-bracket{
+	display: block;
+	margin-top: -15px;
+}
+
+.bug-view-page {
+    max-width: 90% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.bug-report-page {
+    max-width: 1000px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bug-billing-page {
+    max-width: 1000px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bug-report-page select {
+    width: 150px;
+}
+
+.bug-report-page input, .bug-report-page textarea {
+    width: 99%;
+}
+
+.bug-report-page .button {
+    float: right;
+    width: 150px !important;
+}
+
+a.subtle, .form-title a.subtle {
+    text-decoration: none;
+    color: #4375CC;
+    border: none;
+}
+
+a.resolved {
+    text-decoration: line-through underline;
+    color: #4375CC;
+}
+
+a {
+    color: #4375CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.not-link, 
+.not-link-hover-underline {
+    color: #000;
+}
+
+.not-link:hover {
+    text-decoration: none;
+}
+
+.not-link-hover-underline:hover {
+    text-decoration: underline;
+}
+
+.form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #000000;
+    font-size: 14px;
+    height: 15px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+
+.btn-right {
+    float: right;
+    margin-right: -24px;
+    margin-top: -10px;
+}

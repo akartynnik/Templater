@@ -99,6 +99,7 @@ class TemplaterPlugin extends MantisPlugin {
 			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
 			{
 				echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../plugins/Templater/custom-features/brackets_fix_for_v1.3.css\"></script>" . "\r\n";
+				echo "<script src=\"../plugins/Templater/custom-features/brackets_fix_for_v1.3.js\"></script>" . "\r\n";
 			} 
 			else 
 			{
