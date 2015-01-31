@@ -57,9 +57,8 @@ Templater - это плагин, позволяющий применять к Ma
 **TODO:** сделать английскую локализацию
 
 **Ссылки**  
-[Топик на оф. форуме MantisBT](https://www.mantisbt.org/forums/viewtopic.php?f=11&t=22909&e=0)   
-[Первый пост на Megamozg.ru](http://megamozg.ru/post/2160/)  
-[Второй пост на Habrahabr.ru](http://habrahabr.ru/post/249367/)  
+[Топик на оф. форуме MantisBT](https://www.mantisbt.org/forums/viewtopic.php?f=11&t=22909&e=0) 
+[Пост на Habrahabr.ru](http://habrahabr.ru/post/249367/)  
 
 **Контакты (Contact info)**
 * skype: `lex-kar-008` 
