@@ -65,6 +65,10 @@ $( document ).ready(function() {
 		$("table.width90").addClass("bug-report-page");
 	}
 	
+	if( window.location.pathname == "/summary_page.php" ){
+		$(".form-title").remove();
+	}
+	
 	if( window.location.pathname == "/view.php" ){
 		$("table.width100").not(':eq(0)').addClass("bug-view-page");
 	}
@@ -89,7 +93,7 @@ $( document ).ready(function() {
 		$("a[href*='my_view_page']").addClass("selected-menu");
 	}
 	
-	if( window.location.pathname == "/view_all_bug_page.php" ){
+	if( window.location.pathname == "/view_all_bug_page.php" || window.location.pathname == "/view.php" ){
 		$("a[href*='view_all_bug_page']").addClass("selected-menu");
 	}
 	
@@ -109,7 +113,7 @@ $( document ).ready(function() {
 		$("a[href*='summary_page']").addClass("selected-menu");
 	}
 	
-	if( window.location.pathname == "/manage_overview_page.php" ){
+	if( window.location.pathname.match(/\/manage_.*/) || window.location.pathname.match(/\/adm_.*/) || window.location.pathname == "/plugin.php" ){
 		$("a[href*='manage_overview_page']").addClass("selected-menu");
 	}
 	

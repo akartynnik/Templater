@@ -118,13 +118,6 @@ table.width50 {
     border: none;
 }
 
-td {
-    font-family: 'Open Sans',sans-serif;
-    font-size: 10pt;
-    padding: 4px;
-    text-align: left;
-}
-
 td.center {
     text-align: center;
 }
@@ -135,13 +128,6 @@ td.left {
 
 td.right {
     text-align: right;
-}
-
-td.category {
-    background-color: #c8c8e8;
-    color: #000000;
-    font-weight: bold;
-    vertical-align: top;
 }
 
 td.overdue {
@@ -235,25 +221,8 @@ tr.row-2 {
     color: #000000;
 }
 
-tr.row-category {
-    background-color: #c8c8e8;
-    color: #000000;
-    font-weight: bold;
-}
-
 tr.row-category td {
     text-align: center;
-}
-
-tr.row-category2 {
-    background-color: #c8c8e8;
-    color: #000000;
-}
-
-tr.row-category-history {
-    background-color: #c8c8e8;
-    color: #000000;
-    font-weight: bold;
 }
 
 tr.row-category-history td {
@@ -275,15 +244,6 @@ tr.print-category {
 
 #buglist tr {
     text-align: center;
-}
-
-td.bugnote-public {
-    background-color: #c8c8e8;
-    color: #000000;
-    font-weight: bold;
-    width: 25%;
-    line-height: 1.4;
-    vertical-align: top;
 }
 
 td.bugnote-private {
@@ -326,21 +286,6 @@ td.login-info-right {
     padding: 0px;
     text-align: right;
     white-space: nowrap;
-}
-
-td.menu {
-    background-color: #3D3D3D;
-    color: #fff;
-    text-align: left;
-    width: 100%;
-    padding: 7px 15px;
-}
-
-td.news-heading-public {
-    background-color: #c8c8e8;
-    color: #000000;
-    text-align: left;
-    border-bottom: 1px solid #000000;
 }
 
 td.news-heading-private {
@@ -495,16 +440,6 @@ div.quick-summary-right {
     border-bottom: 1px dotted black;
 }
 
-.avatar {
-    float: right;
-    border: 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius-bottomright: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-    border-radius: 5px;
-}
-
 .progress400 {
     position: relative;
     width: 400px;
@@ -547,30 +482,19 @@ div.quick-summary-right {
     vertical-align: middle;
 }
 
-input.small {
-    background-color: #ffffff;
-    background-image: none;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #000000;
-    height: 14px;
-    line-height: 1.42857;
-    padding: 2px 12px;
-    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-}
 
-
-.hlForgotPassword, .bracket-link a {
+.hlForgotPassword{
     border-bottom: 1px dashed #515050;
     color: #515050;
     font-size: 12px;
 }
 
-.hlForgotPassword:hover, .bracket-link a:hover {
+.hlForgotPassword:hover {
     border-bottom: 1px solid #515050;
     text-decoration: none;
 }
+
+
 
 .account-page .button {
     float: right;
@@ -613,6 +537,176 @@ input.small {
 
 
 /*** Custom CSS Templater***/
+/** Menu and button style START **/
+.bracket-link {
+	background-color: #3d3d3d;
+    font-size: 12px;
+    padding: 3px 6px;
+	margin: 3px 0;
+	transition: 0.2s;
+	border-radius: 25px;
+	color: #5AB9F4;
+	font-weight: bold;
+}
+
+.bracket-link:hover {
+	transition: 0.2s;
+	background-color: #0b8bdd;
+	color: white;
+}
+
+.bracket-link a{
+	color: white !important;
+	font-weight: normal;
+    padding: 3px 0px;
+	display: inline-block;
+}
+
+.bracket-link a:hover{
+	text-decoration: none;
+}
+
+td.menu {
+    background-color: #3D3D3D;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+	margin:0 !important;
+	padding:0 !important;
+}
+
+tr td.menu a:first-letter, .bracket-link a:first-letter {
+    text-transform: uppercase;
+}
+
+.menu .selected-menu{
+	transition: 0.2s;
+	font-weight: bold;
+	color: #5AB9F4 !important;
+}
+
+tr td.menu a {
+	transition: 0.2s;
+    padding: 10px 12px 0 12px;
+    color: white !important;
+	display: inline-block;
+	height: 30px;
+    text-align: center;
+}
+
+.menu .selected-menu:hover, td.menu a:hover{
+	text-decoration: none !important;
+	background-color: #0b8bdd;
+	color: white !important;
+}
+
+tr td.menu a:last-child {
+    color: #F25959 !important;
+    font-weight: bold;
+}
+
+tr td.menu a:last-child:hover {
+    color: white !important;
+    transition: 0.2s;
+}
+
+.btn, .button, .button-small {
+	transition: 0.2s;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    text-align: center;
+    vertical-align: middle; 
+	padding: 3px 6px;
+	margin: 3px 0;
+	background-color: #3d3d3d;
+    color: white;
+    border: none;
+}
+
+.btn-default:hover, .button:hover, .button-small:hover {
+    transition: 0.2s;
+	background-color: #0b8bdd;
+	color: white;
+}
+
+.btn-right {
+    float: right;
+    margin-right: -24px;
+    margin-top: -10px;
+}
+
+.menu .button-small{
+	border: 2px solid #0b8bdd;
+	color: #5AB9F4;
+	font-weight: bold !important;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.menu .button-small:hover {
+	color: white;
+	border: 2px solid white;
+}
+/** Menu and button style FINISH **/
+
+/** Inputs not submit and selects START **/
+input.small {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #000000;
+	font-size: 12px !important;
+    font-weight: 400 !important;
+	padding: 4px 6px;
+	margin: 3px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #000000;
+	font-size: 12px !important;
+    font-weight: 400 !important;
+	padding: 4px 6px;
+	margin: 3px 0;
+}
+
+select {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #000000;
+	font-size: 12px !important;
+    font-weight: 400 !important;
+	padding: 2px 6px 3px 6px;
+	margin: 2px 5px 2px 5px;
+}
+
+textarea {
+    border-radius: 15px 15px 0 15px;
+    border: 1px solid #cccccc;
+	padding: 10px 15px; 
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+/** Inputs not submit and selects FINISH **/
+
+a.subtle {
+    color: #4375cc;
+    text-decoration: none;
+}
+
 address {
     font-family: 'Open Sans',sans-serif;
     font-size: 8pt;
@@ -641,10 +735,10 @@ address:not(a) {
 
 table tr td.login-page-category{
 	font-weight: normal;
+	background-color: white !important;
 }
 
 .login-page-bracket{
-	display: block;
 	margin-top: -15px;
 }
 
@@ -670,19 +764,9 @@ table tr td.login-page-category{
     width: 150px;
 }
 
-.bug-report-page input, .bug-report-page textarea {
-    width: 99%;
-}
-
 .bug-report-page .button {
     float: right;
     width: 150px !important;
-}
-
-a.subtle, .form-title a.subtle {
-    text-decoration: none;
-    color: #4375CC;
-    border: none;
 }
 
 a.resolved {
@@ -697,26 +781,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-tr td.menu a {
-    display: inline-block;
-    text-align: center;
-    padding: 0px;
-	margin: 0 10px;
-}
-
-.bracket-link a {
-    display: inline-block;
-}
-
-tr td.menu a:first-letter, .bracket-link a:first-letter {
-    text-transform: uppercase;
-}
-
-tr td.menu a:last-child {
-    color: #0b8bdd !important;
-    font-weight: bold;
 }
 
 table#buglist td:not(.left),
@@ -762,57 +826,26 @@ table#buglist  td.left {
     width: 100%;
 }
 
+td.category,
+tr.row-category,
+tr.row-category2,
+tr.row-category-history,
+td.bugnote-public,
+td.news-heading-public {
+    background-color: #c2dfff;
+} 
 
-.btn, .button, .button-small {
-    -moz-user-select: none;
-    background-image: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 0 12px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
+.avatar {
+	margin-top: 10px;
 }
 
-.btn-default, .button, .button-small {
-    background-color: #ebebeb;
-    border: 1px solid #cccccc;
-    color: #222;
+td.bugnote-public {
+	vertical-align: middle;
 }
 
-.btn-default:hover, .button:hover, .button-small:hover {
-    background-color: #cccccc;
-}
-
-.btn-right {
-    float: right;
-    margin-right: -24px;
-    margin-top: -10px;
-}
-
-.menu .selected-menu{
-	font-weight: bold;
-	border-bottom: 1px dashed white;
-}
-
-.menu .selected-menu:hover{
-	text-decoration: none !important;
-	border-bottom: 1px solid white;
-}
-
-td.menu a {
-    white-space: nowrap;
-    padding-right: 12px;
-    padding-left: 12px;
-    color: #fff !important;
-}
-
-td.menu a:hover {
-    text-decoration: none !important;
-	border-bottom: 1px solid white;
+td {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 10pt;
+    padding: 8px;
+    text-align: left;
 }
