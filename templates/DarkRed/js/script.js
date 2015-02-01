@@ -1,3 +1,12 @@
+function msieversion() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
+            return true;
+        else              
+            return false;
+}
+
 //добавляем шрифт
 var link = document.createElement('link');
 link.href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=cyrillic,cyrillic-ext,latin';
@@ -123,6 +132,11 @@ $( document ).ready(function() {
 	
 	if( window.location.pathname == "/billing_page.php" ){
 		$("a[href*='billing_page']").addClass("selected-menu");
+	}
+	
+	//menu fix for IE
+	if( !msieversion() ){
+		$("tr td.menu a").css("transition","0.2s");
 	}
 	
 });

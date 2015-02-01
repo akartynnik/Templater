@@ -586,7 +586,6 @@ tr td.menu a:first-letter, .bracket-link a:first-letter {
 }
 
 tr td.menu a {
-	transition: 0.2s;
     padding: 10px 12px 0 12px;
     color: white !important;
 	display: inline-block;
