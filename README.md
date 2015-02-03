@@ -34,13 +34,13 @@ Templater - это плагин, позволяющий применять к Ma
 ###Инструкция по установке плагина в версиях 1.2.X
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
-2. В файле `core/html_api.php` в начало функции `html_footer()` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` после строки `function html_footer( $p_file = null ) {` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
+2. В файле `core/html_api.php` в  функции `html_head_end()` перед `echo '</head>', "\n";` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
 3. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
 ###Инструкция по установке плагина в версиях 1.3.X
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
-2. В файле `core/html_api.php` в начало функции `html_footer()` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` после строки `function html_footer() {` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
+2. В файле `core/html_api.php` в  функции `html_head_end()` перед `echo '</head>', "\n";` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
 3. В файле `core/http_api.php` в функции `http_security_headers()` изменить строчку `header( 'Content-Security-Policy: default-src \'self\';' . $t_avatar_img_allow . '; frame-ancestors \'none\'' );` на `header( 'Content-Security-Policy: default-src \'self\'; font-src \'self\' fonts.gstatic.com; style-src \'self\' fonts.googleapis.com \'unsafe-inline\';' . $t_avatar_img_allow . '; frame-ancestors \'none\';' );` (изменения касаются так называемой [Content Security Policy](http://habrahabr.ru/company/yandex/blog/206508/), и позволяют подгружать шрифты с серверов google, а так же устраняют проблему с подгрузкой стилей, используемых библиотекой jQuery);
 4. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
