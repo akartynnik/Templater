@@ -72,15 +72,18 @@ Templater - это плагин, позволяющий применять к Ma
 
 **Превью**  
 ***
-![MantisBT Templater](http://habrastorage.org/files/abd/cb0/89b/abdcb089b9ca4aadaa63f412f8f7ad17.JPG)
+![Templater configuration | DarkBlue template](http://habrastorage.org/files/bab/28d/3ac/bab28d3ac5344d6e921d4adaf0e45a58.JPG)
 ***
-![MantisBT DarkBlue template](http://habrastorage.org/files/56f/059/94b/56f05994bae448378d107f9dc6f87d56.JPG)
+![Templater configuration | DarkRed template](http://habrastorage.org/files/f64/a22/1b7/f64a221b7ed64a3e9fd297c31957c87f.JPG)
 ***
-![MantisBT DarkRed template](http://habrastorage.org/files/819/8fa/75a/8198fa75a64546a9a21661eab0b1eeba.JPG)
+![Login page | DarkBlue template](http://habrastorage.org/files/876/355/d67/876355d6729b4e9e86f97b1c286db42b.JPG)
 ***
-![MantisBT DarkBlue template](http://habrastorage.org/files/c07/64c/f3f/c0764cf3f37649c99a4c84ce94f2cea8.PNG)
+![Login page | DarkRed template](http://habrastorage.org/files/29d/7c1/9f3/29d7c19f3d5041a897d128ec87521785.JPG)
 ***
-![MantisBT DarkBlue template](http://habrastorage.org/files/02a/d4c/1ae/02ad4c1ae60d4202a7135a42f72a15a7.PNG)
+![Issue create | DarkBlue template](http://habrastorage.org/files/430/e4b/378/430e4b378cf0480682507c15f1d8f006.JPG)
 ***
-![MantisBT DarkRed template](http://habrastorage.org/files/685/4f9/199/6854f9199163442b9ac588c498c38527.JPG)
-
+![Issue create | DarkRed template](http://habrastorage.org/files/90b/ed6/6be/90bed66be36243b08fd0b6a3fe850db4.JPG)
+***
+![Issues view | DarkBlue template](http://habrastorage.org/files/3ca/7bc/978/3ca7bc97857844898901e1567d5c278c.JPG)
+***
+![Issues view | DarkRed template](http://habrastorage.org/files/5fd/372/e8a/5fd372e8a28d4e709fed9f520fedc51b.JPG)
