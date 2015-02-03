@@ -274,6 +274,24 @@ td, th {
 
 }
 
+.main-menu input[type="submit"]{
+	border: 2px solid #0b8bdd;
+	color: #5AB9F4;
+	font-weight: bold !important;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.main-menu input[type="submit"]:hover{
+	border: 2px solid white;
+	margin-left: 5px;
+}
+
+.main-menu #bug-jump {
+	margin-top: 2px !important;
+}
+
 input[type="submit"] {
 	transition: 0.2s;
     border-radius: 25px;
