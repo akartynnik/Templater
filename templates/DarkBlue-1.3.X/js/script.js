@@ -1,3 +1,12 @@
+function msieversion() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
+            return true;
+        else              
+            return false;
+}
+
 //добавляем шрифт
 var link = document.createElement('link');
 link.href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=cyrillic,cyrillic-ext,latin';
@@ -63,7 +72,7 @@ $( document ).ready(function() {
 	}
 	
 	if( window.location.pathname == "/billing_page.php" ){
-		$("table.width100").not(':eq(0)').addClass("bug-billing-page");
+		$("table.width100").addClass("bug-billing-page");
 	}
 	
 	if( window.location.pathname == "/login_page.php" ){
@@ -94,39 +103,44 @@ $( document ).ready(function() {
 	
 	//выделение в меню
 	if( window.location.pathname == "/my_view_page.php" ){
-		$("#menu-items a[href*='my_view_page']").addClass("selected-menu");
+		$("a[href*='my_view_page']").addClass("selected-menu");
 	}
 	
-	if( window.location.pathname == "/view_all_bug_page.php" ){
-		$("#menu-items a[href*='view_all_bug_page']").addClass("selected-menu");
+	if( window.location.pathname == "/view_all_bug_page.php" || window.location.pathname == "/view.php" ){
+		$("a[href*='view_all_bug_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/bug_report_page.php" ){
-		$("#menu-items a[href*='bug_report_page']").addClass("selected-menu");
+		$("a[href*='bug_report_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/changelog_page.php" ){
-		$("#menu-items a[href*='changelog_page']").addClass("selected-menu");
+		$("a[href*='changelog_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/roadmap_page.php" ){
-		$("#menu-items a[href*='roadmap_page']").addClass("selected-menu");
+		$("a[href*='roadmap_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/summary_page.php" ){
-		$("#menu-items a[href*='summary_page']").addClass("selected-menu");
+		$("a[href*='summary_page']").addClass("selected-menu");
 	}
 	
-	if( window.location.pathname == "/manage_overview_page.php" ){
-		$("#menu-items a[href*='manage_overview_page']").addClass("selected-menu");
+	if( window.location.pathname.match(/\/manage_.*/) || window.location.pathname.match(/\/adm_.*/) || window.location.pathname == "/plugin.php" ){
+		$("a[href*='manage_overview_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/account_page.php" ){
-		$("#menu-items a[href*='account_page']").addClass("selected-menu");
+		$("a[href*='account_page']").addClass("selected-menu");
 	}
 	
 	if( window.location.pathname == "/billing_page.php" ){
-		$("#menu-items a[href*='billing_page']").addClass("selected-menu");
+		$("a[href*='billing_page']").addClass("selected-menu");
+	}
+	
+	//menu fix for IE
+	if( !msieversion() ){
+		$("#menu-items a").css("transition","0.2s");
 	}
 
 });
