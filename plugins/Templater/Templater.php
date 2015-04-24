@@ -8,7 +8,7 @@ class TemplaterPlugin extends MantisPlugin {
 		$this->description = 'С помощью данного плагина можно использовать пользовательские шаблоны оформления MantisBT, а так же применять некоторые полезные твики.';
 		$this->page = 'config';
 
-		$this->version = '1.1';
+		$this->version = '1.2';
 		$this->author = 'Aliaksei Kartynnik';
 		$this->contact = 'alex.kar.008@gmail.com';
 		$this->url = 'https://github.com/akartynnik/mantisbt-template';
@@ -58,15 +58,15 @@ class TemplaterPlugin extends MantisPlugin {
 		
 		if( ON == plugin_config_get( 'enable_jquery' ) )
 		{
-			echo "<script src=\"../plugins/Templater/custom-features/jquery.min.js\"></script>" . "\r\n";
+			echo "<script src=\"./plugins/Templater/custom-features/jquery.min.js\"></script>" . "\r\n";
 		}
 		
 		
 		
 		if( ON == plugin_config_get( 'templater_enable' ) )
 		{
-			$path_to_custom_css = "../templates/" . $curent_template_folder_name . "/css/style.css";
-			$path_to_custom_js = "../templates/" . $curent_template_folder_name . "/js/script.js";
+			$path_to_custom_css = "./templates/" . $curent_template_folder_name . "/css/style.css";
+			$path_to_custom_js = "./templates/" . $curent_template_folder_name . "/js/script.js";
 			echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . $path_to_custom_css . "\" />" . "\r\n";
 			echo "<script src=\"" . $path_to_custom_js . "\"></script>" . "\r\n";
 		}
@@ -77,11 +77,11 @@ class TemplaterPlugin extends MantisPlugin {
 		{
 			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
 			{
-				echo "<script src=\"../plugins/Templater/custom-features/send_comment_fix_for_v1.3.js\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/send_comment_fix_for_v1.3.js\"></script>" . "\r\n";
 			} 
 			else 
 			{
-				echo "<script src=\"../plugins/Templater/custom-features/send_comment_fix.js\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/send_comment_fix.js\"></script>" . "\r\n";
 			}
 		}
 		
@@ -89,7 +89,7 @@ class TemplaterPlugin extends MantisPlugin {
 		
 		if( ON == plugin_config_get( 'bottom_logo_fix' ) )
 		{
-			echo "<script src=\"../plugins/Templater/custom-features/bottom_logo_fix.js\"></script>" . "\r\n";
+			echo "<script src=\"./plugins/Templater/custom-features/bottom_logo_fix.js\"></script>" . "\r\n";
 		}
 		
 		
@@ -98,12 +98,12 @@ class TemplaterPlugin extends MantisPlugin {
 		{
 			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
 			{
-				echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../plugins/Templater/custom-features/brackets_fix_for_v1.3.css\"></script>" . "\r\n";
-				echo "<script src=\"../plugins/Templater/custom-features/brackets_fix_for_v1.3.js\"></script>" . "\r\n";
+				echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./plugins/Templater/custom-features/brackets_fix_for_v1.3.css\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/brackets_fix_for_v1.3.js\"></script>" . "\r\n";
 			} 
 			else 
 			{
-				echo "<script src=\"../plugins/Templater/custom-features/brackets_fix.js\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/brackets_fix.js\"></script>" . "\r\n";
 			}
 		}
 		
@@ -113,11 +113,11 @@ class TemplaterPlugin extends MantisPlugin {
 		{
 			if(substr(MANTIS_VERSION, 0, 3) == "1.3")
 			{
-				echo "<script src=\"../plugins/Templater/custom-features/name_as_link_fix_for_v1.3.js\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/name_as_link_fix_for_v1.3.js\"></script>" . "\r\n";
 			} 
 			else 
 			{
-				echo "<script src=\"../plugins/Templater/custom-features/name_as_link_fix.js\"></script>" . "\r\n";
+				echo "<script src=\"./plugins/Templater/custom-features/name_as_link_fix.js\"></script>" . "\r\n";
 			}
 		}
         
