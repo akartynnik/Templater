@@ -60,7 +60,7 @@ Templater - это плагин, позволяющий применять к Ma
 Именно в этих двух файлах содержатся все стили пользовательского шаблона. Templater на лету подключает эти файлы для конкретного шаблона и вставляет их в каждую страницу *MantisBT*;  
 
 
-**TODO:** сделать английскую локализацию
+**TODO:** сделать английскую локализацию. применить изменения из файлов bug_actiongroup_add_note_inc.php, bug_actiongroup.php, bug_report.php, bugnote_add.php, bug_update.php
 
 **Ссылки**  
 [Топик на оф. форуме MantisBT](https://www.mantisbt.org/forums/viewtopic.php?f=11&t=22909&e=0)   
