@@ -1,4 +1,4 @@
-#Templater v1.2 для MantisBT
+#Templater v1.3 для MantisBT
 Templater - это плагин, позволяющий применять к MantisBT пользовательские шаблоны оформления, а так же использовать некоторые твики.  
 Список твиков в текущей версии (работают в версиях mantisbt 1.2.X и 1.3.X):  
 * Возможность применять шаблоны (о написании шаблонов речь пойдет далее);  
@@ -35,14 +35,17 @@ Templater - это плагин, позволяющий применять к Ma
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
 2. В файле `core/html_api.php` в  функции `html_head_end()` перед `echo '</head>', "\n";` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
-3. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
+3. В файлах `bug_actiongroup_add_note_inc.php`, `bugnote_add.php`, `bug_update.php` после строки `$f_bugnote_text = gpc_get_string( 'bugnote_text' );` или `$f_bugnote_text = gpc_get_string( 'bugnote_text','' );` вставить код: `if(config_get( 'plugin_Templater_add_tinymce' , null, null, null) == 1  ){$f_bugnote_text = preg_replace( "/\r|\n/", "", $f_bugnote_text);}`;
+4. В файле `bug_report.php` после строки `$t_bug_data->description = gpc_get_string( 'description' );` вставить код: `if( config_get( 'plugin_Templater_add_tinymce' , null, null, null) == 1  ){$t_bug_data->description = preg_replace( "/\r|\n/", "", $t_bug_data->description);}`;
+5. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
 ###Инструкция по установке плагина в версиях 1.3.X
 
 1. Скопировать папки `plugins/Templater/` и `templates/` в корень *MantisBT*
 2. В файле `core/html_api.php` в  функции `html_head_end()` перед `echo '</head>', "\n";` вставить строчку `event_signal( 'EVENT_TEMPLATER_INIT' );` (этот иветн отвечает за инициализацию плагина на каждой из страниц *MantisBT*);
 3. В файле `core/http_api.php` в функции `http_security_headers()` изменить строчку `header( 'Content-Security-Policy: default-src \'self\';' . $t_avatar_img_allow . '; frame-ancestors \'none\'' );` на `header( 'Content-Security-Policy: default-src \'self\'; font-src \'self\' fonts.gstatic.com; style-src \'self\' fonts.googleapis.com \'unsafe-inline\';' . $t_avatar_img_allow . '; frame-ancestors \'none\';' );` (изменения касаются так называемой [Content Security Policy](http://habrahabr.ru/company/yandex/blog/206508/), и позволяют подгружать шрифты с серверов google, а так же устраняют проблему с подгрузкой стилей, используемых библиотекой jQuery);
-4. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
+4. Проделать действия 3 и 4 из инстроукции по установке версии 1.2.Х
+5. В *MantisBT* в меню *"Управление"-"Управление плагинами"* включить плагин **Шаблонизатор Templater**;   
 
 ***
 
@@ -60,7 +63,7 @@ Templater - это плагин, позволяющий применять к Ma
 Именно в этих двух файлах содержатся все стили пользовательского шаблона. Templater на лету подключает эти файлы для конкретного шаблона и вставляет их в каждую страницу *MantisBT*;  
 
 
-**TODO:** сделать английскую локализацию. применить изменения из файлов bug_actiongroup_add_note_inc.php, bug_actiongroup.php, bug_report.php, bugnote_add.php, bug_update.php
+**TODO:** сделать английскую локализацию.
 
 **Ссылки**  
 [Топик на оф. форуме MantisBT](https://www.mantisbt.org/forums/viewtopic.php?f=11&t=22909&e=0)   
