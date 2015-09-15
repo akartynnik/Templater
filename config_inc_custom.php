@@ -78,8 +78,16 @@
 	$g_use_javascript = ON;
 	$g_login_title_visible = OFF;
 	$g_enable_eta = ON;
-	$g_display_bug_padding		= 0;
+	$g_display_bug_padding		= 0;	
 	/**
 	* Dark-family templates config END
+	**/
+	
+	/** 
+	* Add TinyMCE Editor START
+	**/
+	$g_html_valid_tags		= 'p, li, ul, ol, br, pre, i, b, u, em, strong, div, table, tr, td, strike, h1, h2, h3, h4, h5, h6, hr';
+		/** 
+	* Add TinyMCE Editor END
 	**/
 ?>

@@ -133,6 +133,22 @@ function get_template_dir(){
 				</td>
 			</tr>
 		</tr>
+		
+		<tr <?php echo helper_alternate_class( )?>>
+				<td class="category" width="60%">
+					Добавить поддержку текстового редактора TinyMCE
+				</td>
+				<td class="center" width="20%">
+					<label><input type="radio" name="add_tinymce" value="1" <?php echo( ON == plugin_config_get( 'add_tinymce' ) ) ? 'checked="checked" ' : ''?>/>
+						вкл
+				</td>
+				<td class="center" width="20%">
+					<label><input type="radio" name="add_tinymce" value="0" <?php echo( OFF == plugin_config_get( 'add_tinymce' ) ) ? 'checked="checked" ' : ''?>/>
+						выкл
+				</td>
+			</tr>
+			
+			
 		<tr>
 			<td class="center" colspan="3">
 				<input type="submit" class="button" value="<?php echo lang_get( 'change_configuration' )?>" />

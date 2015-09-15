@@ -8,7 +8,7 @@ class TemplaterPlugin extends MantisPlugin {
 		$this->description = 'С помощью данного плагина можно использовать пользовательские шаблоны оформления MantisBT, а так же применять некоторые полезные твики.';
 		$this->page = 'config';
 
-		$this->version = '1.2';
+		$this->version = '1.3';
 		$this->author = 'Aliaksei Kartynnik';
 		$this->contact = 'alex.kar.008@gmail.com';
 		$this->url = 'https://github.com/akartynnik/mantisbt-template';
@@ -26,6 +26,7 @@ class TemplaterPlugin extends MantisPlugin {
 			'bottom_logo_fix'   => OFF,
 			'brackets_fix'   	=> OFF,
 			'name_as_link_fix'  => OFF,
+			'add_tinymce'  => OFF,
 		);
 	}
 	
@@ -105,9 +106,13 @@ class TemplaterPlugin extends MantisPlugin {
 			{
 				echo "<script src=\"./plugins/Templater/custom-features/brackets_fix.js\"></script>" . "\r\n";
 			}
-		}
+		} 
 		
-		
+		if( ON == plugin_config_get( 'add_tinymce' ) )
+		{
+			echo "<script src=\"./plugins/Templater/custom-features/tinymce/tinymce.min.js\"></script>" . "\r\n";
+			echo "<script src=\"./plugins/Templater/custom-features/add_tinymce.js\"></script>" . "\r\n";
+		}		
 		
 		if( ON == plugin_config_get( 'name_as_link_fix' ) )
 		{

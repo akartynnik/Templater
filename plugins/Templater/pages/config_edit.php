@@ -10,6 +10,7 @@ $f_send_comment_fix 	= 	gpc_get_int( 'send_comment_fix', ON );
 $f_bottom_logo_fix 		= 	gpc_get_int( 'bottom_logo_fix', ON );
 $f_brackets_fix 		= 	gpc_get_int( 'brackets_fix', ON );
 $f_name_as_link_fix 	= 	gpc_get_int( 'name_as_link_fix', ON );
+$f_add_tinymce 		= 	gpc_get_int( 'add_tinymce', ON );
 
 if( plugin_config_get( 'templater_enable' ) != $f_templater_enable ) {
 	plugin_config_set( 'templater_enable', $f_templater_enable );
@@ -37,6 +38,10 @@ if( plugin_config_get( 'brackets_fix' ) != $f_brackets_fix ) {
 
 if( plugin_config_get( 'name_as_link_fix' ) != $f_name_as_link_fix ) {
 	plugin_config_set( 'name_as_link_fix', $f_name_as_link_fix );
+}
+
+if( plugin_config_get( 'add_tinymce' ) != $f_add_tinymce ) {
+	plugin_config_set( 'add_tinymce', $f_add_tinymce );
 }
 
 form_security_purge( 'plugin_templater_config_edit' ); 
